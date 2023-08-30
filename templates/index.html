@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Procesamiento de Texto con SpaCy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Procesamiento de Texto con SpaCy</h1>
+        <form action="/process" method="POST" class="text-form">
+            <label for="rawtext">Texto:</label>
+            <textarea name="rawtext" id="rawtext" rows="5" cols="50" class="raw-text"></textarea>
+            <br>
+            <input type="submit" value="Procesar" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>

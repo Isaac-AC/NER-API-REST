@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import spacy
 
 # Carga el modelo de lenguaje español de SpaCy
@@ -6,11 +6,16 @@ nlp = spacy.load('es_core_news_sm')
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/process', methods=["POST"])
 def process():
     if request.method == 'POST':
-        # Obtiene la opción de tarea y el texto sin formato del formulario de solicitud
-        choice = request.form['taskoption']
+        
+        
         rawtext = request.form['rawtext']
 
         # Crea un documento SpaCy
