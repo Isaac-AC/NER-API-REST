@@ -52,7 +52,7 @@ La API estará disponible en http://localhost:5000.
 2. Ejecuta el siguiente comando:
 
 ~~~
-curl -X POST -F "taskoption=organization" -F "rawtext=Apple esta buscando comprar una startup del Reino Unido por mil millones de dólares. San Francisco considera prohibir los robots de entrega en la acera." http://localhost:5000/process
+curl -X POST -F "taskoption=organization" -F "rawtext=Apple esta buscando comprar una startup del Reino Unido por mil millones de dolares. San Francisco considera prohibir los robots de entrega en la acera." http://localhost:5000/process
 
 ~~~
 
@@ -66,7 +66,7 @@ curl -X POST -F "taskoption=organization" -F "rawtext=Apple esta buscando compra
         "Apple": "ORG",
         "Reino Unido": "LOC"
       },
-      "oracion": "Apple esta buscando comprar una startup del Reino Unido por mil millones de d\u00f3lares."
+      "oracion": "Apple esta buscando comprar una startup del Reino Unido por mil millones de dolares."
     },
     {
       "entidades": {
