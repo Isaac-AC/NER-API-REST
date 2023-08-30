@@ -35,14 +35,14 @@ cd NER-API-REST
 python app.py
 ~~~
 
-    La API estará disponible en http://localhost:5000.
+La API estará disponible en http://localhost:5000.
 
 3. Si ingresas a la ruta tambien podras ver una web donde podras hacer pruebas (Solo devuelve el archivo json).
 
 ### Uso
 
-    Envía una solicitud POST a http://localhost:5000/process con el formulario que contiene el parametro rawtext (texto a analizar).
-    La API devolverá un JSON con una lista de oraciones en el texto, junto con las entidades identificadas en cada oración y sus tipos correspondientes.
+Envía una solicitud POST a http://localhost:5000/process con el formulario que contiene el parametro rawtext (texto a analizar).
+La API devolverá un JSON con una lista de oraciones en el texto, junto con las entidades identificadas en cada oración y sus tipos correspondientes.
 
 
 ## Ejemplo 
